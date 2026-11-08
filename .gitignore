@@ -1,0 +1,10 @@
+.DS_Store
+*~
+
+.zsh_history
+.zcompdump
+.viminfo
+.cache/
+
+.config/gh/hosts.yml
+.ssh/
