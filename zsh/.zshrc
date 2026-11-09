@@ -27,7 +27,7 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # 加载别名和工具
-alias bat='batcat'
+alias bat='batcat --number'
 alias ls='eza --icons'
 alias ll='eza -lh --icons --group-directories-first'
 alias la='eza -lah --icons --group-directories-first'
