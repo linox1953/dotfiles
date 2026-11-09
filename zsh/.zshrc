@@ -36,6 +36,10 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 eval "$(zoxide init zsh)"
 
+alias proxy_on='export http_proxy="http://127.0.0.1:7897"; export https_proxy="http://127.0.0.1:7897"; export all_proxy="socks5://127.0.0.1:7897"; echo "代理已开启: 127.0.0.1:7897"'
+alias proxy_off='unset http_proxy; unset https_proxy; unset all_proxy; echo "代理已关闭"'
+alias proxy_status='echo "HTTP_PROXY: $http_proxy"; echo "HTTPS_PROXY: $https_proxy"; echo "ALL_PROXY: $all_proxy"'
+
 source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Zsh 的 Vi 模式
@@ -74,3 +78,6 @@ bindkey -M viins '^[[3~' delete-char
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="$PATH:/home/linox/.local/bin"
+
