@@ -16,6 +16,11 @@ setopt hist_ignore_dups
 # 加载 fzf (模糊搜索)
 source /usr/share/doc/fzf/examples/key-bindings.zsh
 source /usr/share/doc/fzf/examples/completion.zsh
+export FZF_DEFAULT_OPTS="
+--info inline
+--preview 'batcat --color=always --style=numbers --line-range :500 {} 2>/dev/null'
+--preview-window right,hidden,wrap,border-horizontal
+--bind 'ctrl-/:change-preview-window(60%|hidden)'"
 
 # 加载自动补全插件
 source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
