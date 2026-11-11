@@ -39,6 +39,7 @@ alias la='eza -lah --icons --group-directories-first'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
+alias fd='fdfind'
 eval "$(zoxide init zsh)"
 
 alias proxy_on='export http_proxy="http://127.0.0.1:7897"; export https_proxy="http://127.0.0.1:7897"; export all_proxy="socks5://127.0.0.1:7897"; echo "代理已开启: 127.0.0.1:7897"'
