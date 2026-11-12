@@ -5,3 +5,5 @@
 [user]
 	name = Lin Lijian
 	email = linox1953@outlook.com
+[init]
+	defaultBranch = main
